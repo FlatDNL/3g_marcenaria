@@ -1,0 +1,30 @@
+{
+  "name": "3g-marcenaria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "analyze_contacts.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^14.12.0",
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vite": "^8.3.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.17"
+  }
+}
