@@ -2,6 +2,7 @@ import React from 'react';
 import { MessageCircle, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { COMPANY_INFO } from '../data/content';
+import { getAssetUrl } from '../utils/assets';
 
 export default function Hero({ onOpenWhatsApp }) {
   return (
@@ -88,7 +89,7 @@ export default function Hero({ onOpenWhatsApp }) {
         >
           <div className="relative rounded-3xl overflow-hidden border border-[#272A30] shadow-2xl bg-[#181A1E] aspect-[4/5] sm:aspect-[4/4] lg:aspect-[4/5] group">
             <img
-              src="/images/post_17_DVRBbMzAKck.jpg"
+              src={getAssetUrl('/images/post_17_DVRBbMzAKck.jpg')}
               alt="Cozinha integrada de alto padrão - Projeto com 3G Marcenaria"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               loading="eager"

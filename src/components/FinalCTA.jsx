@@ -3,6 +3,7 @@ import { MessageCircle, ArrowRight } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 import { motion } from 'framer-motion';
 import { COMPANY_INFO } from '../data/content';
+import { getAssetUrl } from '../utils/assets';
 
 export default function FinalCTA({ onOpenWhatsApp }) {
   return (
@@ -11,7 +12,7 @@ export default function FinalCTA({ onOpenWhatsApp }) {
       {/* Imagem de Fundo em tela cheia com overlay escuro idêntico ao protótipo ("Connect With Us") */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/post_1_DdZjFRcGOTs.jpg"
+          src={getAssetUrl('/images/post_1_DdZjFRcGOTs.jpg')}
           alt="Área gourmet planejada pela 3G Marcenaria"
           className="w-full h-full object-cover object-center scale-105"
         />

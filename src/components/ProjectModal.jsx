@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight, MessageCircle, MapPin, Sparkles, Building2 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
+import { getAssetUrl } from '../utils/assets';
 
 export default function ProjectModal({ project, onClose, onOpenWhatsApp }) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -58,7 +59,7 @@ export default function ProjectModal({ project, onClose, onOpenWhatsApp }) {
         {/* Lado Esquerdo: Carrossel de Fotos de Alta Resolução */}
         <div className="lg:w-3/5 bg-black relative flex items-center justify-center min-h-[320px] sm:min-h-[420px] lg:min-h-full">
           <img
-            src={images[activeImageIndex]}
+            src={getAssetUrl(images[activeImageIndex])}
             alt={`${project.title} - Foto ${activeImageIndex + 1}`}
             className="w-full h-full object-cover max-h-[55vh] lg:max-h-[85vh]"
           />

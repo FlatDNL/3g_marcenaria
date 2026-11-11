@@ -2,6 +2,7 @@ import React from 'react';
 import { MessageCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { COMPANY_INFO } from '../data/content';
+import { getAssetUrl } from '../utils/assets';
 
 export default function About({ onOpenWhatsApp }) {
   return (
@@ -19,7 +20,7 @@ export default function About({ onOpenWhatsApp }) {
           >
             <div className="relative rounded-3xl overflow-hidden border border-[#272A30] shadow-2xl bg-[#181A1E] aspect-[4/5] sm:aspect-[4/4] group">
               <img 
-                src="/images/post_3_Dc1VNxkIDS1.jpg" 
+                src={getAssetUrl('/images/post_3_Dc1VNxkIDS1.jpg')} 
                 alt="Detalhes construtivos e acabamento artesanal da 3G Marcenaria"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"

@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { PROJECTS } from '../data/content';
+import { getAssetUrl } from '../utils/assets';
 
 export default function Portfolio({ onSelectProject }) {
   return (
@@ -47,7 +48,7 @@ export default function Portfolio({ onSelectProject }) {
             >
               {/* Imagem de Fundo com zoom suave no hover */}
               <img
-                src={project.image}
+                src={getAssetUrl(project.image)}
                 alt={project.title}
                 className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
                 loading="lazy"
